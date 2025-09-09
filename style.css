@@ -153,13 +153,19 @@ body {
 
 @media (max-width: 600px) {
   .hero {
-    /* half of clamp(320px, 45vh, 560px) */
+   
     height: clamp(160px, 22.5vh, 280px);
   }
   .hero-content {
     bottom: 50%;
-    transform: translate(-50%, 50%); /* recenter vertically */
+    transform: translate(-50%, 50%); 
   }
+}
+
+.logo-mobile{ display:none; }
+@media (max-width:520px){
+  .logo-desktop{ display:none; }
+  .logo-mobile{ display:inline; height:32px; }
 }
 
 
